@@ -54,8 +54,13 @@ if (form && feedbackElement) {
 }
 
 // fetching the button 
-let darkmode = document.getElementById("darkmode");
+let darkmode = document.getElementById("darkmode-btn");
 // adding event listener to the button
-darkmode.addEventListener("click", function () {
-	document	.body.classList.toggle("dark-mode");
-});
+if (darkmode) {
+	darkmode.addEventListener("click", function () {
+		const darkModeActiv = document.body.classList.toggle("dark-mode");
+		alert(darkModeActiv ? "Dark mode activat!" : "Dark mode dezactivat!");
+	});
+} else {
+	console.error("Butonul cu id-ul 'darkmode-btn' nu a fost găsit.");
+}

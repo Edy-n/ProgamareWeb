@@ -2,15 +2,22 @@
 	text-align: center;
 }
 
-#body {
-	font-family: Arial, sans-serif;
-	background-color: #f0f0f0;
-	color: #333;
-}
 
 body.dark-mode {
- background-color: #1a1a2e;
---text-color: #e0e0e0;
- /* Ce alte elemente trebuie schimbate? Ganditi-va! */
+	background-color: #1a1a2e;
+	color: #e0e0e0;
+	/* Tema dark aplicata pe intregul body */
+
+}
+
+body.dark-mode a {
+	color: #9ecbff;
+
+}
+
+body.dark-mode button {
+	background-color: #2d3250;
+	color: #e0e0e0;
+	border: 1px solid #6c8ebf;
 
 }
