@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Cod laborator 1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="mainCss.css">
+</head>
+<body>
+   <header id="home">
+      <h2>Mă numesc Eduard</h2>
+      <p id="numele">????</p>
+      <p>Facultatea IESC Calculatoare</p>   
+   </header>
+   
+   <main>
+      <section id="about">
+         <img src="./images/download.jpeg" alt="imagine cu pisica" loading="lazy" id="pisica"> <br>
+         <p>Îmi place să joc șah și pisicile</p>
+      </section>
+      <section id="education">
+         <ol>
+            <li>Gimnaziu</li>
+            <li>Liceu mate-info</li>
+            <li>Facultate UNITBV Cacl. Licenta</li>
+         </ol>
+         <aside id="citatFavorit"> 
+            <h3>CITATUL FAVORIT</h3>
+            <p>The only way to do great work is to love what you do.</p>
+         </aside>
+      </section>
+   </main>
+
+   <nav id="meniu">
+      <li><a href="#home">Acasă</a></li>
+      <li><a href="#about">Despre</a></li>
+		<li><button type = "button" id="darkmode-btn" >DARKMODE</button></li>
+   </nav>
+
+   <footer>
+      <p><a href="#">Contact</a> <br>   
+      Copyright Petrov Eduard 2026 
+      </p>
+      
+      <form id = "form">
+         <label for="nume">Nume:</label>
+         <input type="text" id="nume" name="name" required>
+         <br>
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required>
+         <br>
+         <label for="message">Mesaj:</label>
+         <textarea id="message" name="message" rows="4" required></textarea>
+         <br>
+         <button type="submit">Submit</button>
+         <p id="form-feedback"></p>
+      </form>
+   </footer>
+
+   <script src="js/contact_form.js"></script> 
+   
+   <script>
+     alert("Hello World!");
+   </script>
+</body>
+</html>
