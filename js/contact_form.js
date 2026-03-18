@@ -64,3 +64,4 @@ if (darkmode) {
 } else {
 	console.error("Butonul cu id-ul 'darkmode-btn' nu a fost găsit.");
 }
+const toggleButton = document.getElementById("toggle-h2-btn");
