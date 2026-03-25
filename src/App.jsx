@@ -1,4 +1,5 @@
-import Card from './Card'; 
+import Card from './Card.jsx'; 
+import {useState} from 'react';	
 
 function App() {
    const projects = [
@@ -6,6 +7,7 @@ function App() {
       { title: "Proiect 2", description: "Calculator buget" },
       { title: "Proiect 3", description: "Dashboard React" },
    ];
+	const [count , setCount] = useState(0);
 
    return (
       <div>
@@ -21,6 +23,8 @@ function App() {
                />
             );
          })}
+			<p>Ai apasat pe {count} ori</p>
+			<button onClick = {() =>  setCount(count + 1)}>Apasa-ma</button>
       </div>
    );
 }
