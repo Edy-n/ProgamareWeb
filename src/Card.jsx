@@ -1,14 +1,9 @@
-function NumeComponenta() {
+function Card(props) {
 	return (
-		<section>
-			<h1>INFO CARD</h1>
-			<ul style={{ listStyleType: 'none' }}>
-				<li>Nume: Petrov Eduard</li>
-				<li>Varsta: 20</li>
-				<li>Student: CALC Anul 2</li>
-
-			</ul>
-		</section>
+		<div>
+			<h3>{props.title} </h3>
+			<p>{props.description}</p>
+		</div>
 	);
 }
-export default NumeComponenta;
+export default Card;
