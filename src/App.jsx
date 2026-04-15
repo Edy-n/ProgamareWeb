@@ -1,6 +1,8 @@
 import Card from './Card.jsx';
 import { useState } from 'react';
 import QuickNote from './QuickNote';
+import TodoList from './TodoList.jsx';
+
 
 function App() {
 	const projects = [
@@ -29,6 +31,7 @@ function App() {
 			<button onClick={() => setCount(count - 1)}>Decrement</button>
 			<button onClick={() => setCount(count - count)}>reset</button>
 			<QuickNote />
+			<TodoList />
 		</div>
 	);
 }
