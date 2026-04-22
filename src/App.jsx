@@ -2,6 +2,7 @@ import Card from './Card.jsx';
 import { useState } from 'react';
 import QuickNote from './QuickNote';
 import TodoList from './TodoList.jsx';
+import ContactForm from './ContactForm.jsx';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
 			<button onClick={() => setCount(count - count)}>reset</button>
 			<QuickNote />
 			<TodoList />
+			<ContactForm />
 		</div>
 	);
 }
